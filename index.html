@@ -65,11 +65,52 @@
 <div class="bs-docs-section">
 <h1 id="uio" class="page-header">Как учитывать и оплачивать электроэнергию<a class="anchorjs-link" href="#uio"></a></h1>
 
-
-
-
   <h2 id="sms">Учёт электроэнергии (СМС сообщения)<a class="anchorjs-link" href="#sms"><span class="anchorjs-icon"></span></a></h2>
-  <p>Информация будет скоро добавлена</p>
+<div class="media">
+<div class="media-left">
+  <a href="http://10018575.fis.ru/popup_imgs/10103461.jpg" data-toggle="lightbox" data-title="Счётчик" data-footer="С бегущей цифрой">
+    <img src="http://10018575.fis.ru/popup_imgs/10103461.jpg" class="img-responsive" style="height: 200px;">
+  </a>
+
+ <a href="http://www.rs-stroyka.ru/netcat_files/103/41/0200d0592acbe28a35bd0089a8930a32.jpeg" data-toggle="lightbox" data-title="Счётчик" data-footer="С бегущей цифрой">
+    <img src="http://www.rs-stroyka.ru/netcat_files/103/41/0200d0592acbe28a35bd0089a8930a32.jpeg" class="img-responsive" style="width: 150px">
+  </a>
+
+
+<!--   <a href="#">
+    <img data-holder-rendered="true" src="http://10018575.fis.ru/popup_imgs/10103461.jpg" style="width: 64px; height: 64px;" class="media-object" data-src="" alt="64x64">
+  </a> -->
+</div>
+      <div class="media-body">
+        <h4 id="media-heading" class="media-heading">Нажми на картинку слева, чтобы увеличить<a class="anchorjs-link" href="#media-heading"><span class="anchorjs-icon"></span></a></h4>
+        Отправлять sms сообщение нужно на номер 8(903)6138495 в одном из двух форматов:
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 id="panel-title" class="panel-title">Вариант1: XXX,ДД.ММ.ГГГГ,xxxxx.x<a class="anchorjs-link" href="#panel-title"><span class="anchorjs-icon"></span></a></h3>
+  </div>
+  <div class="panel-body">
+    <p>XXX - трёхзначное число - ваш УГН - уникальный гаражный номер </p>
+    <p>запятая</p>
+    <p>ДД.ММ.ГГГГ - дата, на которую верны показания счётчика (напр. 28.04.2015 - означает, что показания списаны на 28 апреля 2015 года) </p>
+    <p>запятая</p>
+    <p>xxxxx.x - показания счётчика - ровно как на счётчике</p>
+  </div>
+</div>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 id="panel-title" class="panel-title">Вариант2: XXXДДММГГГГxxxxx<a class="anchorjs-link" href="#panel-title"><span class="anchorjs-icon"></span></a></h3>
+  </div>
+  <div class="panel-body">
+    <p>XXX - трёхзначное число - ваш УГН - уникальный гаражный номер </p>
+    <p>запятая</p>
+    <p>ДД.ММ.ГГГГ - дата, на которую верны показания счётчика (напр. 28.04.2015 - означает, что показания списаны на 28 апреля 2015 года) </p>
+    <p>запятая</p>
+    <p>xxxxx.x - показания счётчика - ровно как на счётчике</p>
+  </div>
+</div>
+
+</div>
+</div>
 
 
 
@@ -164,6 +205,51 @@
 function runningFormatter(value, row, index) {
 return index+1;
 }</script>
+
+<script type="text/javascript">
+$(document).ready(function ($) {
+// delegate calls to data-toggle="lightbox"
+$(document).delegate('*[data-toggle="lightbox"]:not([data-gallery="navigateTo"])', 'click', function(event) {
+event.preventDefault();
+return $(this).ekkoLightbox({
+onShown: function() {
+if (window.console) {
+return console.log('Checking our the events huh?');
+}
+},
+onNavigate: function(direction, itemIndex) {
+if (window.console) {
+return console.log('Navigating '+direction+'. Current item: '+itemIndex);
+}
+}
+});
+});
+//Programatically call
+$('#open-image').click(function (e) {
+e.preventDefault();
+$(this).ekkoLightbox();
+});
+$('#open-youtube').click(function (e) {
+e.preventDefault();
+$(this).ekkoLightbox();
+});
+// navigateTo
+$(document).delegate('*[data-gallery="navigateTo"]', 'click', function(event) {
+event.preventDefault();
+return $(this).ekkoLightbox({
+onShown: function() {
+var a = this.modal_content.find('.modal-footer a');
+if(a.length > 0) {
+a.click(function(e) {
+e.preventDefault();
+this.navigateTo(2);
+}.bind(this));
+}
+}
+});
+});
+});
+</script>
 
 </body>
 </html>
