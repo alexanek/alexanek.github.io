@@ -26,10 +26,21 @@
   <div class="bs-docs-section">
   <h1 id="rep1" class="page-header">Журнал учёта и оплаты<a class="anchorjs-link" href="#rep1"></a></h1>
 
-<div id="toolbar">
-<span class="label label-info">Обновляется ежедневно по рабочим дням</span>
+<div>
+<!--<span class="label label-info">Обновляется ежедневно по рабочим дням</span> -->
 <!-- <button id="refresh" class="btn btn-default">Refresh</button> -->
-<span class="label label-danger">Должники</span>
+<p>Расшифровка столбцов в таблице ниже:</p>
+<p><span class="label label-danger">УГН</span> - уникальный гаражный номер</p>
+<p><span class="label label-danger">Рх(КвтЧ)</span> - сколько нажгли электроэнергии за всё время учёта</p>
+<p><span class="label label-danger">Ст(руб.)</span> - Рх(КвтЧ) умноженный на 6 рублей, т.е. общая стоимость потребленной электроэнергии</p>
+<p><span class="label label-danger">Б(руб.)</span> - деньги, которые были внесены через QIWI за всё время учёта</p>
+<p><span class="label label-danger">Кол.Пок.</span> - количество отправленных СМС на номер (8903)6138495 с показаниями счётчика в гараже</p>
+<p><span class="label label-danger">Кол.Пок.</span> - количество отправленных СМС на номер (8903)6138495 с показаниями счётчика в гараже</p>
+</div>
+
+<div id="toolbar">
+<span class="label label-info">Таблица обновляется еженедельно!</span>
+<!-- <button id="refresh" class="btn btn-default">Refresh</button> -->
 </div>
 
 
@@ -89,10 +100,8 @@
   </div>
   <div class="panel-body">
     <p>XXX - трёхзначное число - ваш УГН - уникальный гаражный номер </p>
-    <p>запятая</p>
-    <p>ДД.ММ.ГГГГ - дата, на которую верны показания счётчика (напр. 28.04.2015 - означает, что показания списаны на 28 апреля 2015 года) </p>
-    <p>запятая</p>
-    <p>xxxxx.x - показания счётчика - ровно как на счётчике</p>
+    <p>ДДММГГГГ - дата, на которую верны показания счётчика (напр. 28042015 - означает, что показания списаны на 28 апреля 2015 года) </p>
+    <p>xxxxx - показания счётчика - если есть бегущая строка, то с округлением в большую сторону</p>
   </div>
 </div>
 
