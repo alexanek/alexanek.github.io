@@ -51,6 +51,7 @@
        data-show-refresh="true"
        data-show-toggle="true"
        data-show-columns="true"
+       data-filter-control="true"
        data-toolbar="#toolbar">
     <thead>
     <tr>
@@ -58,10 +59,13 @@
         <th data-field="ugn" data-switchable="false" data-sortable="true" data-halign="center">УГН</th>
         <th data-field="unv" data-visible="false" data-sortable="true" data-halign="center">УНВ</th>
         <th data-field="fio" data-sortable="true" data-halign="center">Фио</th>
-        <th data-field="energy_value" data-sortable="true" data-halign="center">Рх(КвтЧ)</th>
-        <th data-field="energy_cost" data-sortable="true" data-halign="center">Ст(руб.)</th>
-        <th data-field="qiwi_value" data-sortable="true"  data-halign="center" data-sortable="true">Б(руб.)</th>
-        <th data-field="energy_count" data-sortable="true" data-halign="center">Кол.Пок.</th>
+        <th data-field="balance" data-sortable="true" data-halign="center">Тек.Б.</th>
+        <th data-field="class" data-filter-control="select" data-sortable="true" data-halign="center">Активность</th>
+        <th data-field="sector" data-visible="false" data-sortable="true" data-halign="center">Сектор</th>
+        <th data-field="energy_value" data-visible="false" data-sortable="true" data-halign="center">Рх(КвтЧ)</th>
+        <th data-field="energy_cost" data-visible="false" data-sortable="true" data-halign="center">Ст(руб.)</th>
+        <th data-field="qiwi_value" data-visible="false" data-sortable="true"  data-halign="center" data-sortable="true">Внес(руб.)</th>
+        <th data-field="energy_count" data-visible="false" data-sortable="true" data-halign="center">Кол.Пок.</th>
         <th data-field="sms_history" data-visible="false" data-sortable="true" data-halign="center">SMS</th>
         <th data-field="qiwi_history" data-visible="false" data-sortable="true" data-halign="center">QIWI</th>
 
@@ -180,6 +184,7 @@
 <script src="scripts/bootstrap-table-flatJSON.js"></script>
 <script src="scripts/bootstrap-table-ru-RU.js"></script>
 <script src="scripts/ekko-lightbox.min.js"></script>
+<script src="scripts/filter.js"></script>
 
 
 
