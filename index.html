@@ -31,6 +31,8 @@
 <!-- <button id="refresh" class="btn btn-default">Refresh</button> -->
 <p>Расшифровка столбцов в таблице ниже:</p>
 <p><span class="label label-danger">УГН</span> - уникальный гаражный номер</p>
+<p><span class="label label-danger">Тек.Б.</span> - текущий баланс, т.е. сумма платежей за минусом стоимости общей потребленной энергии</p>
+<p><span class="label label-danger">Активность</span> - классификация гаражей по активности платежей и отправке показаний по sms</p>
 <p><span class="label label-danger">Рх(КвтЧ)</span> - сколько нажгли электроэнергии за всё время учёта</p>
 <p><span class="label label-danger">Ст(руб.)</span> - Рх(КвтЧ) умноженный на 6 рублей, т.е. общая стоимость потребленной электроэнергии</p>
 <p><span class="label label-danger">Б(руб.)</span> - деньги, которые были внесены через QIWI за всё время учёта</p>
@@ -61,13 +63,13 @@
         <th data-field="fio" data-sortable="true" data-halign="center">Фио</th>
         <th data-field="balance" data-sortable="true" data-halign="center">Тек.Б.</th>
         <th data-field="class" data-filter-control="select" data-sortable="true" data-halign="center">Активность</th>
-        <th data-field="sector" data-visible="false" data-sortable="true" data-halign="center">Сектор</th>
-        <th data-field="energy_value" data-visible="false" data-sortable="true" data-halign="center">Рх(КвтЧ)</th>
-        <th data-field="energy_cost" data-visible="false" data-sortable="true" data-halign="center">Ст(руб.)</th>
-        <th data-field="qiwi_value" data-visible="false" data-sortable="true"  data-halign="center" data-sortable="true">Внес(руб.)</th>
-        <th data-field="energy_count" data-visible="false" data-sortable="true" data-halign="center">Кол.Пок.</th>
-        <th data-field="sms_history" data-visible="false" data-sortable="true" data-halign="center">SMS</th>
-        <th data-field="qiwi_history" data-visible="false" data-sortable="true" data-halign="center">QIWI</th>
+        <th data-field="sector" data-searchable="false" data-visible="false" data-sortable="true" data-halign="center">Сектор</th>
+        <th data-field="energy_value" data-searchable="false" data-visible="false" data-sortable="true" data-halign="center">Рх(КвтЧ)</th>
+        <th data-field="energy_cost"data-searchable="false"  data-visible="false" data-sortable="true" data-halign="center">Ст(руб.)</th>
+        <th data-field="qiwi_value" data-searchable="false" data-visible="false" data-sortable="true"  data-halign="center" data-sortable="true">Внес(руб.)</th>
+        <th data-field="energy_count" data-searchable="false" data-visible="false" data-sortable="true" data-halign="center">Кол.Пок.</th>
+        <th data-field="sms_history" data-searchable="false" data-visible="false" data-sortable="true" data-halign="center">SMS</th>
+        <th data-field="qiwi_history" data-searchable="false" data-visible="false" data-sortable="true" data-halign="center">QIWI</th>
 
     </tr>
     </thead>
