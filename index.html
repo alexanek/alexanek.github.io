@@ -51,6 +51,12 @@
 <p><h4>Сектор 3 будет отключен от электроэнергии, если до 15 ноября не наведёт порядок в своих показаниях.</h4></p>
 
   </div>
+
+   <div class="bs-callout bs-callout-danger">
+    <h4>ВАЖНО!!!</h4>
+    Формат отправляемых сообщений должен быть строго по форме, представленной <a href="#uio">ниже</a>. После обязательной части в смс может содержаться любой комментарий. Но если в смс в части показания будут лишние запятые или пробелы или точки - сообщение не будет распозноваться системой. Если неправильно отправили смс - исправьте и отправьте заново. Претензии: "Я отправлял - но нинформация не обновилась" в этом случае не принимаются!!!
+  </div>
+
   <div class="bs-callout bs-callout-info">
     <h4>По учёту и оплате</h4>
     Учитывая опыт 8 месяцев и полученную выше информацию - Всем владельцам гаражей без исключения необходимо отправлять информацию о показаниях счётчика не реже одного раза в месяц <span class="label label-danger">не позднее 28</span> числа включительно. Очень <span class="label label-danger">важно</span> отправлять смс строго по форме согласно <a href="#uio">инструкции, которую можно посмотреть ниже</a>!!! Подробную информацию о своём гараже смотрите ниже в разделе <a href="#rep1">Журнал учёта и оплаты</a>. Информация обновляется еженедельно.
@@ -59,6 +65,11 @@
     <div class="bs-callout bs-callout-info">
     <h4>По оплате через QIWI терминал</h4>
    Оплачивать электроэнергию возможно только через терминалы QIWI c обязательным указанием своего УГН в комментарии. Это необходимо для того, чтобы у вас на руках оставался чек, который является документом, подтверждающим факт оплаты. Тем не менее - случае, если аппарат не выдал чек или вы не указали УГН -  Вы в течение дня должны связаться со мной и сообщить о проблеме. Во всех остальных случаях претензии без предъявления чека о проведенной оплате не рассматриваюся!!!
+  </div>
+
+        <div class="bs-callout bs-callout-info">
+    <h4>По поводу замены счётчика</h4>
+  <p>В случае поломки или замены  счётчика в гараже - необходимо в течение недели сообщить об этом мне. В противном случае - недобор электричества по ряду будет записываться на этот гараж.</p>
   </div>
 
       <div class="bs-callout bs-callout-info">
@@ -76,7 +87,13 @@
 <div>
 <!--<span class="label label-info">Обновляется ежедневно по рабочим дням</span> -->
 <!-- <button id="refresh" class="btn btn-default">Refresh</button> -->
-<p>Расшифровка столбцов в таблице ниже:</p>
+
+
+<div class="row">
+<div class="col-md-8">
+<div class="panel panel-default">
+  <div class="panel-body">
+    <p>Расшифровка столбцов в таблице ниже:</p>
 <p><span class="label label-danger">УГН</span> - уникальный гаражный номер</p>
 <p><span class="label label-danger">Тек.Б.</span> - текущий баланс, т.е. сумма платежей за минусом стоимости общей потребленной энергии</p>
 <p><span class="label label-danger">Активность</span> - классификация гаражей по активности платежей и отправке показаний по sms</p>
@@ -87,6 +104,25 @@
 <p><span class="label label-danger">Кол.Пок.</span> - количество отправленных СМС на номер (8903)6138495 с показаниями счётчика в гараже</p>
 <p><span class="label label-danger">SMS</span> - история всех смс с показаниями счётчика</p>
 <p><span class="label label-danger">QIWI</span> - история всех платежей</p>
+  </div>
+</div>
+</div>
+
+
+  <div class="col-md-4">
+<div class="panel panel-default">
+  <div class="panel-body">
+<p><span>Справа вверху таблицы - есть значки, которые расширяют информацию в таблице. Слева на право: поле поиск, далее обновление, изменение представления и добавление полей. Нажми на эту картинку, чтобы посмотреть как.<a href="assets/how_table.gif" data-toggle="lightbox" data-title="Как работает таблица" data-footer="Щёлкаете на значёк и выбираете поля">
+    <img src="assets/how_table.gif" class="img-responsive" style="height: 90px;">
+  </a></span></p>
+    </div>
+</div>
+</div>
+
+<div class="col-md-4"></div>
+
+</div>
+
 </div>
 
 <div id="toolbar">
@@ -103,7 +139,7 @@
        data-show-refresh="true"
        data-show-toggle="true"
        data-show-columns="true"
-       
+
        data-filter-control="true"
        data-toolbar="#toolbar">
     <thead>
@@ -112,7 +148,7 @@
         <th data-field="ugn" data-switchable="false" data-sortable="true" data-halign="center">УГН</th>
         <th data-field="unv" data-visible="false" data-sortable="true" data-halign="center">УНВ</th>
         <th data-field="fio" data-sortable="true" data-halign="center">Фио</th>
-        <th data-field="balance" data-sortable="true" data-halign="center">Тек.Б.</th>
+        <th data-field="balance" data-cell-style="cellStyle" data-sortable="true" data-halign="center">Тек.Б.</th>
         <th data-field="class" data-filter-control="select" data-sortable="true" data-halign="center">Активность</th>
         <th  data-field="sector"  data-searchable="false" data-visible="false" data-sortable="true" data-halign="center">Сектор</th>
         <th data-field="energy_value" data-searchable="false" data-visible="false" data-sortable="true" data-halign="center">Рх(КвтЧ)</th>
@@ -315,6 +351,26 @@
 <script src="scripts/filter.js"></script>
 
 
+
+<script>
+function cellStyle(value) {
+    var classes = ['active', 'success', 'info', 'warning', 'danger'];
+
+    if (value > 0) {
+        return {
+            classes: 'success'
+        };
+    } else if (value < 0) {
+        return {
+            classes: 'danger'
+        };
+
+    }
+
+    return {};
+}
+
+</script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
