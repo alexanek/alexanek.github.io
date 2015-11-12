@@ -31,274 +31,275 @@ body {  padding: 10px; padding-top: 55px;}
 <div class="row">
 <div class="col-md-9" role="main"><!-- #################################################### -->
 <div class="bs-docs-section">
+  <span class="label label-success">Информация обновлена 12.11.2015 в 17:01</span>
   <h1 id="messages" class="page-header">НП "Энергетик" (в/ч 44684)<a href="#messages"></a></h1>
 
 
-<!-- ################################################################ -->
-<div class="bs-callout bs-callout-info">
-    <h4>Информация по центральным счётчикам</h4>
-    <p>За период с 01.01.2015 по 08.11.2015 (311 дн.) по общему для всех гаражей счётчику расход электроэнергии составил:<strong><a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample"> 6,056 кВт</strong></a>
+    <!-- ################################################################ -->
+    <div class="bs-callout bs-callout-info">
+        <h4>Информация по центральным счётчикам</h4>
+        <p>За период с 01.01.2015 по 08.11.2015 (311 дн.) по общему для всех гаражей счётчику расход электроэнергии составил:<strong><a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample"> 6,056 кВт</strong></a>
+
+
+
+
+        , т.е. стоимость потребления из расхода 6 руб.
+          за 1 кВт составила: <strong>36,336.00</strong> руб. При этом за всё время учёта
+          было передано показаний от владельцев гаражей по sms: <strong>3,610.20</strong> кВт на сумму <strong>21,661.21</strong> руб.
+          Всего внесли денег в счёт оплаты электроэнергии: <strong>29,493.70</strong> руб. В итоге общий долг по оплате
+          (т.е. общая стоимость электроэнергии за вычетом всех пополнений от владельцев) составляет: <span class="label label-danger">6,842.30 руб.</span>
+          Но это значение не совсем корректно, т.к. в них часть денег людей, которые заранее внесли на свой баланс деньги. Более корректной цифрой по
+          общей задолженности будет: <span class="label label-danger">14,674.79 руб.</span>
+          </p>
+
+    <div class="collapse" id="collapseExample">
+    <div class="well">
+
+    <table id="table_m_stat"
+           data-toggle="table"
+           data-url="data/m_stat.json"
+           data-mobile-responsive="true">
+        <thead>
+
+        <tr>
+            <th data-field="date" class=result_table_col data-sortable="false" data-halign="center">Дата</th>
+            <th data-field="em_value_ondate" class=result_table_col data-sortable="false" data-halign="center">Показания(к.=40)</th>
+            <th data-field="days" class=result_table_col data-sortable="false" data-halign="center">Длительность, дни</th>
+            <th data-field="value_diff" class=result_table_col data-sortable="false" data-halign="center">Расход, Квт</th>
+            <th data-field="cost" class=result_table_col data-sortable="false" data-halign="center">Стоимость, руб</th>
+
+        </tr>
+        </thead>
+    </table>
+    </div>
+    </div>
+
+
+    <p>За период с 18.03.2015 по 08.11.2015 суммарное значение потребленной электроэнергии по счётчикам в котельной составило:  <strong> 4742.00 кВт</strong>, в т.ч.:</p>
+
+
+    <p><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> Расход по 1 Группе гаражей (рядом с магазином до забора): <strong>1,493.00 кВт</strong>, в т.ч.:</p>
+
+
+    <p><span class="glyphicon glyphicon-flash" aria-hidden="true"></span><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> по <a data-toggle="collapse" href="#s21" aria-expanded="false" aria-controls="collapseExample">Фазе 1</a>  - 974.60 кВт(по счётчикам в котельной) и 573.00 кВт(по показаниям владельцев), т.е. разница в показаниях <span class="label label-danger">401.60 Квт, а значит долг 2,409.60 руб.</span></p>
+
+    <div class="collapse" id="s21">
+    <div class="well">
+
+    <table id="table_m_stat_21"
+           data-toggle="table"
+           data-url="data/info21.json"
+           data-mobile-responsive="true">
+        <thead>
+
+        <tr>
+            <th data-field="fio" data-sortable="true" data-halign="center">Фио</th>
+            <th data-field="energy_value" data-sortable="true" data-halign="center">Рх(КвтЧ)</th>
+            <th data-field="qiwi_value" data-sortable="true" data-halign="center">Внес(руб.)</th>
+            <th data-field="energy_count" data-sortable="true" data-halign="center">Кол.Пок.</th>
+
+        </tr>
+        </thead>
+    </table>
+
+    </div>
+    </div>
+
+
+    <p><span class="glyphicon glyphicon-flash" aria-hidden="true"></span><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> по <a data-toggle="collapse" href="#s22" aria-expanded="false" aria-controls="collapseExample">Фазе 2</a>  - 294.40 кВт(по счётчикам в котельной) и 145.10 кВт(по показаниям владельцев), т.е. разница в показаниях <span class="label label-danger">149.30 Квт, а значит долг 895.80 руб.</span></p>
+    <div class="collapse" id="s22">
+    <div class="well">
+
+    <table id="table_m_stat_22"
+           data-toggle="table"
+           data-url="data/info22.json"
+           data-mobile-responsive="true">
+        <thead>
+
+        <tr>
+            <th data-field="fio" data-sortable="true" data-halign="center">Фио</th>
+            <th data-field="energy_value" data-sortable="true" data-halign="center">Рх(КвтЧ)</th>
+            <th data-field="qiwi_value" data-sortable="true" data-halign="center">Внес(руб.)</th>
+            <th data-field="energy_count" data-sortable="true" data-halign="center">Кол.Пок.</th>
+
+        </tr>
+        </thead>
+    </table>
+
+    </div>
+    </div>
+
+
+    <p><span class="glyphicon glyphicon-flash" aria-hidden="true"></span><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> по <a data-toggle="collapse" href="#s23" aria-expanded="false" aria-controls="collapseExample">Фазе 3</a>  - 210.20 кВт(по счётчикам в котельной) и 103.00 кВт(по показаниям владельцев), т.е. разница в показаниях <span class="label label-danger">107.20 Квт, а значит долг 643.20 руб.</span></p>
+    <div class="collapse" id="s23">
+    <div class="well">
+
+    <table id="table_m_stat_23"
+           data-toggle="table"
+           data-url="data/info23.json"
+           data-mobile-responsive="true">
+        <thead>
+
+        <tr>
+            <th data-field="fio" data-sortable="true" data-halign="center">Фио</th>
+            <th data-field="energy_value" data-sortable="true" data-halign="center">Рх(КвтЧ)</th>
+            <th data-field="qiwi_value" data-sortable="true" data-halign="center">Внес(руб.)</th>
+            <th data-field="energy_count" data-sortable="true" data-halign="center">Кол.Пок.</th>
+
+        </tr>
+        </thead>
+    </table>
+
+    </div>
+    </div>
+
+
+    <p><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> Расход по 2 Группе гаражей (за забором около старой котельной до Колгушкина включительно): <strong>1,737.60 кВт</strong>, в т.ч.:</p>
+
+    <p><span class="glyphicon glyphicon-flash" aria-hidden="true"></span><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> по <a data-toggle="collapse" href="#s11" aria-expanded="false" aria-controls="collapseExample">Фазе 1</a>  - 822.10 кВт(по счётчикам в котельной) и 1,083.80 кВт(по показаниям владельцев), т.е. разница в показаниях <span class="label label-danger">-261.70 Квт, а значит долг -1,570.20 руб.</span></p>
+    <div class="collapse" id="s11">
+    <div class="well">
+
+    <table id="table_m_stat_11"
+           data-toggle="table"
+           data-url="data/info11.json"
+           data-mobile-responsive="true">
+        <thead>
+
+        <tr>
+            <th data-field="fio" data-sortable="true" data-halign="center">Фио</th>
+            <th data-field="energy_value" data-sortable="true" data-halign="center">Рх(КвтЧ)</th>
+            <th data-field="qiwi_value" data-sortable="true" data-halign="center">Внес(руб.)</th>
+            <th data-field="energy_count" data-sortable="true" data-halign="center">Кол.Пок.</th>
+
+        </tr>
+        </thead>
+    </table>
+
+    </div>
+    </div>
+    <p><span class="glyphicon glyphicon-flash" aria-hidden="true"></span><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> по <a data-toggle="collapse" href="#s12" aria-expanded="false" aria-controls="collapseExample">Фазе 2</a>  - 69.00 кВт(по счётчикам в котельной) и 33.10 кВт(по показаниям владельцев), т.е. разница в показаниях <span class="label label-danger">35.90 Квт, а значит долг 215.40 руб.</span></p>
+    <div class="collapse" id="s12">
+    <div class="well">
+
+    <table id="table_m_stat_12"
+           data-toggle="table"
+           data-url="data/info12.json"
+           data-mobile-responsive="true">
+        <thead>
+
+        <tr>
+            <th data-field="fio" data-sortable="true" data-halign="center">Фио</th>
+            <th data-field="energy_value" data-sortable="true" data-halign="center">Рх(КвтЧ)</th>
+            <th data-field="qiwi_value" data-sortable="true" data-halign="center">Внес(руб.)</th>
+            <th data-field="energy_count" data-sortable="true" data-halign="center">Кол.Пок.</th>
+
+        </tr>
+        </thead>
+    </table>
+
+    </div>
+    </div>
+    <p><span class="glyphicon glyphicon-flash" aria-hidden="true"></span><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> по <a data-toggle="collapse" href="#s13" aria-expanded="false" aria-controls="collapseExample">Фазе 3</a>  - 846.50 кВт(по счётчикам в котельной) и 693.30 кВт(по показаниям владельцев), т.е. разница в показаниях <span class="label label-danger">153.20 Квт, а значит долг 919.20 руб.</span></p>
+    <div class="collapse" id="s13">
+    <div class="well">
+
+    <table id="table_m_stat_13"
+           data-toggle="table"
+           data-url="data/info13.json"
+           data-mobile-responsive="true">
+        <thead>
+
+        <tr>
+            <th data-field="fio" data-sortable="true" data-halign="center">Фио</th>
+            <th data-field="energy_value" data-sortable="true" data-halign="center">Рх(КвтЧ)</th>
+            <th data-field="qiwi_value" data-sortable="true" data-halign="center">Внес(руб.)</th>
+            <th data-field="energy_count" data-sortable="true" data-halign="center">Кол.Пок.</th>
+
+        </tr>
+        </thead>
+    </table>
+
+    </div>
+    </div>
+
+
+    <p><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> Расход по 3 Группе гаражей (от Колгушкина и к поваровской дороге): <strong>1,511.40 кВт</strong>, в т.ч.:</p>
+
+    <p><span class="glyphicon glyphicon-flash" aria-hidden="true"></span><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> по <a data-toggle="collapse" href="#s31" aria-expanded="false" aria-controls="collapseExample">Фазе 1</a>  - 368.30 кВт(по счётчикам в котельной) и 159.70 кВт(по показаниям владельцев), т.е. разница в показаниях <span class="label label-danger">208.60 Квт, а значит долг 1,251.60 руб.</span></p>
+    <div class="collapse" id="s31">
+    <div class="well">
+
+    <table id="table_m_stat_31"
+           data-toggle="table"
+           data-url="data/info31.json"
+           data-mobile-responsive="true">
+        <thead>
+
+        <tr>
+            <th data-field="fio" data-sortable="true" data-halign="center">Фио</th>
+            <th data-field="energy_value" data-sortable="true" data-halign="center">Рх(КвтЧ)</th>
+            <th data-field="qiwi_value" data-sortable="true" data-halign="center">Внес(руб.)</th>
+            <th data-field="energy_count" data-sortable="true" data-halign="center">Кол.Пок.</th>
+
+        </tr>
+        </thead>
+    </table>
+
+    </div>
+    </div>
+    <p><span class="glyphicon glyphicon-flash" aria-hidden="true"></span><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> по <a data-toggle="collapse" href="#s32" aria-expanded="false" aria-controls="collapseExample">Фазе 2</a>  - 1,082.10 кВт(по счётчикам в котельной) и 749.00 кВт(по показаниям владельцев), т.е. разница в показаниях <span class="label label-danger">333.10 Квт, а значит долг 1,998.60 руб.</span></p>
+    <div class="collapse" id="s32">
+    <div class="well">
+
+    <table id="table_m_stat_32"
+           data-toggle="table"
+           data-url="data/info32.json"
+           data-mobile-responsive="true">
+        <thead>
+
+        <tr>
+            <th data-field="fio" data-sortable="true" data-halign="center">Фио</th>
+            <th data-field="energy_value" data-sortable="true" data-halign="center">Рх(КвтЧ)</th>
+            <th data-field="qiwi_value" data-sortable="true" data-halign="center">Внес(руб.)</th>
+            <th data-field="energy_count" data-sortable="true" data-halign="center">Кол.Пок.</th>
+
+        </tr>
+        </thead>
+    </table>
+
+    </div>
+    </div>
+    <p><span class="glyphicon glyphicon-flash" aria-hidden="true"></span><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> по <a data-toggle="collapse" href="#s33" aria-expanded="false" aria-controls="collapseExample">Фазе 3</a>  - 16.90 кВт(по счётчикам в котельной) и 70.20 кВт(по показаниям владельцев), т.е. разница в показаниях <span class="label label-danger">-53.30 Квт, а значит долг -319.80 руб.</span></p>
+    <div class="collapse" id="s33">
+    <div class="well">
+
+    <table id="table_m_stat_33"
+           data-toggle="table"
+           data-url="data/info33.json"
+           data-mobile-responsive="true">
+        <thead>
+
+        <tr>
+            <th data-field="fio" data-sortable="true" data-halign="center">Фио</th>
+            <th data-field="energy_value" data-sortable="true" data-halign="center">Рх(КвтЧ)</th>
+            <th data-field="qiwi_value" data-sortable="true" data-halign="center">Внес(руб.)</th>
+            <th data-field="energy_count" data-sortable="true" data-halign="center">Кол.Пок.</th>
+
+        </tr>
+        </thead>
+    </table>
+
+    </div>
+    </div>
+
+    <p>Замечание: для того, чтобы посмотреть детализацию по цифрам в тексте выше -
+    нажмите на слово или цифру, выделенную голубым цветом!
+    </p>
+
+    </div>
+    <!-- ################################################################ -->
     
-
-    
-    
-    , т.е. стоимость потребления из расхода 6 руб. 
-      за 1 кВт составила: <strong>36,336.00</strong> руб. При этом за всё время учёта
-      было передано показаний от владельцев гаражей по sms: <strong>3,610.20</strong> кВт на сумму <strong>21,661.21</strong> руб. 
-      Всего внесли денег в счёт оплаты электроэнергии: <strong>29,493.70</strong> руб. В итоге общий долг по оплате 
-      (т.е. общая стоимость электроэнергии за вычетом всех пополнений от владельцев) составляет: <span class="label label-danger">6,842.30 руб.</span>
-      Но это значение не совсем корректно, т.к. в них часть денег людей, которые заранее внесли на свой баланс деньги. Более корректной цифрой по 
-      общей задолженности будет: <span class="label label-danger">14,674.79 руб.</span>
-      </p>
-
-<div class="collapse" id="collapseExample">
-<div class="well">
-
-<table id="table_m_stat"
-       data-toggle="table"
-       data-url="data/m_stat.json"
-       data-mobile-responsive="true">
-    <thead>
-
-    <tr>
-        <th data-field="date" class=result_table_col data-sortable="false" data-halign="center">Дата</th>
-        <th data-field="em_value_ondate" class=result_table_col data-sortable="false" data-halign="center">Показания(к.=40)</th>
-        <th data-field="days" class=result_table_col data-sortable="false" data-halign="center">Длительность, дни</th>
-        <th data-field="value_diff" class=result_table_col data-sortable="false" data-halign="center">Расход, Квт</th>
-        <th data-field="cost" class=result_table_col data-sortable="false" data-halign="center">Стоимость, руб</th>
-
-    </tr>
-    </thead>
-</table>
-</div>
-</div>
-
-    
-<p>За период с 18.03.2015 по 08.11.2015 суммарное значение потребленной электроэнергии по счётчикам в котельной составило:  <strong> 4742.00 кВт</strong>, в т.ч.:</p>
-
-
-<p><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> Расход по 1 Группе гаражей (рядом с магазином до забора): <strong>1,493.00 кВт</strong>, в т.ч.:</p>
-
-
-<p><span class="glyphicon glyphicon-flash" aria-hidden="true"></span><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> по <a data-toggle="collapse" href="#s21" aria-expanded="false" aria-controls="collapseExample">Фазе 1</a>  - 974.60 кВт(по счётчикам в котельной) и 573.00 кВт(по показаниям владельцев), т.е. разница в показаниях <span class="label label-danger">401.60 Квт, а значит долг 2,409.60 руб.</span></p>
-            
-<div class="collapse" id="s21">
-<div class="well">
-
-<table id="table_m_stat_21"
-       data-toggle="table"
-       data-url="data/info21.json"
-       data-mobile-responsive="true">
-    <thead>
-
-    <tr>
-        <th data-field="fio" data-sortable="true" data-halign="center">Фио</th>
-        <th data-field="energy_value" data-sortable="true" data-halign="center">Рх(КвтЧ)</th>
-        <th data-field="qiwi_value" data-sortable="true" data-halign="center">Внес(руб.)</th>
-        <th data-field="energy_count" data-sortable="true" data-halign="center">Кол.Пок.</th>
-
-    </tr>
-    </thead>
-</table>
-
-</div>
-</div>
-            
-            
-<p><span class="glyphicon glyphicon-flash" aria-hidden="true"></span><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> по <a data-toggle="collapse" href="#s22" aria-expanded="false" aria-controls="collapseExample">Фазе 2</a>  - 294.40 кВт(по счётчикам в котельной) и 145.10 кВт(по показаниям владельцев), т.е. разница в показаниях <span class="label label-danger">149.30 Квт, а значит долг 895.80 руб.</span></p>
-<div class="collapse" id="s22">
-<div class="well">
-
-<table id="table_m_stat_22"
-       data-toggle="table"
-       data-url="data/info22.json"
-       data-mobile-responsive="true">
-    <thead>
-
-    <tr>
-        <th data-field="fio" data-sortable="true" data-halign="center">Фио</th>
-        <th data-field="energy_value" data-sortable="true" data-halign="center">Рх(КвтЧ)</th>
-        <th data-field="qiwi_value" data-sortable="true" data-halign="center">Внес(руб.)</th>
-        <th data-field="energy_count" data-sortable="true" data-halign="center">Кол.Пок.</th>
-
-    </tr>
-    </thead>
-</table>
-
-</div>
-</div>
-
-
-<p><span class="glyphicon glyphicon-flash" aria-hidden="true"></span><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> по <a data-toggle="collapse" href="#s23" aria-expanded="false" aria-controls="collapseExample">Фазе 3</a>  - 210.20 кВт(по счётчикам в котельной) и 103.00 кВт(по показаниям владельцев), т.е. разница в показаниях <span class="label label-danger">107.20 Квт, а значит долг 643.20 руб.</span></p>
-<div class="collapse" id="s23">
-<div class="well">
-
-<table id="table_m_stat_23"
-       data-toggle="table"
-       data-url="data/info23.json"
-       data-mobile-responsive="true">
-    <thead>
-
-    <tr>
-        <th data-field="fio" data-sortable="true" data-halign="center">Фио</th>
-        <th data-field="energy_value" data-sortable="true" data-halign="center">Рх(КвтЧ)</th>
-        <th data-field="qiwi_value" data-sortable="true" data-halign="center">Внес(руб.)</th>
-        <th data-field="energy_count" data-sortable="true" data-halign="center">Кол.Пок.</th>
-
-    </tr>
-    </thead>
-</table>
-
-</div>
-</div>
-
-
-<p><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> Расход по 2 Группе гаражей (за забором около старой котельной до Колгушкина включительно): <strong>1,737.60 кВт</strong>, в т.ч.:</p>
-
-<p><span class="glyphicon glyphicon-flash" aria-hidden="true"></span><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> по <a data-toggle="collapse" href="#s11" aria-expanded="false" aria-controls="collapseExample">Фазе 1</a>  - 822.10 кВт(по счётчикам в котельной) и 1,083.80 кВт(по показаниям владельцев), т.е. разница в показаниях <span class="label label-danger">-261.70 Квт, а значит долг -1,570.20 руб.</span></p>
-<div class="collapse" id="s11">
-<div class="well">
-
-<table id="table_m_stat_11"
-       data-toggle="table"
-       data-url="data/info11.json"
-       data-mobile-responsive="true">
-    <thead>
-
-    <tr>
-        <th data-field="fio" data-sortable="true" data-halign="center">Фио</th>
-        <th data-field="energy_value" data-sortable="true" data-halign="center">Рх(КвтЧ)</th>
-        <th data-field="qiwi_value" data-sortable="true" data-halign="center">Внес(руб.)</th>
-        <th data-field="energy_count" data-sortable="true" data-halign="center">Кол.Пок.</th>
-
-    </tr>
-    </thead>
-</table>
-
-</div>
-</div>
-<p><span class="glyphicon glyphicon-flash" aria-hidden="true"></span><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> по <a data-toggle="collapse" href="#s12" aria-expanded="false" aria-controls="collapseExample">Фазе 2</a>  - 69.00 кВт(по счётчикам в котельной) и 33.10 кВт(по показаниям владельцев), т.е. разница в показаниях <span class="label label-danger">35.90 Квт, а значит долг 215.40 руб.</span></p>
-<div class="collapse" id="s12">
-<div class="well">
-
-<table id="table_m_stat_12"
-       data-toggle="table"
-       data-url="data/info12.json"
-       data-mobile-responsive="true">
-    <thead>
-
-    <tr>
-        <th data-field="fio" data-sortable="true" data-halign="center">Фио</th>
-        <th data-field="energy_value" data-sortable="true" data-halign="center">Рх(КвтЧ)</th>
-        <th data-field="qiwi_value" data-sortable="true" data-halign="center">Внес(руб.)</th>
-        <th data-field="energy_count" data-sortable="true" data-halign="center">Кол.Пок.</th>
-
-    </tr>
-    </thead>
-</table>
-
-</div>
-</div>
-<p><span class="glyphicon glyphicon-flash" aria-hidden="true"></span><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> по <a data-toggle="collapse" href="#s13" aria-expanded="false" aria-controls="collapseExample">Фазе 3</a>  - 846.50 кВт(по счётчикам в котельной) и 693.30 кВт(по показаниям владельцев), т.е. разница в показаниях <span class="label label-danger">153.20 Квт, а значит долг 919.20 руб.</span></p>
-<div class="collapse" id="s13">
-<div class="well">
-
-<table id="table_m_stat_13"
-       data-toggle="table"
-       data-url="data/info13.json"
-       data-mobile-responsive="true">
-    <thead>
-
-    <tr>
-        <th data-field="fio" data-sortable="true" data-halign="center">Фио</th>
-        <th data-field="energy_value" data-sortable="true" data-halign="center">Рх(КвтЧ)</th>
-        <th data-field="qiwi_value" data-sortable="true" data-halign="center">Внес(руб.)</th>
-        <th data-field="energy_count" data-sortable="true" data-halign="center">Кол.Пок.</th>
-
-    </tr>
-    </thead>
-</table>
-
-</div>
-</div>
-
-
-<p><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> Расход по 3 Группе гаражей (от Колгушкина и к поваровской дороге): <strong>1,511.40 кВт</strong>, в т.ч.:</p>
-
-<p><span class="glyphicon glyphicon-flash" aria-hidden="true"></span><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> по <a data-toggle="collapse" href="#s31" aria-expanded="false" aria-controls="collapseExample">Фазе 1</a>  - 368.30 кВт(по счётчикам в котельной) и 159.70 кВт(по показаниям владельцев), т.е. разница в показаниях <span class="label label-danger">208.60 Квт, а значит долг 1,251.60 руб.</span></p>
-<div class="collapse" id="s31">
-<div class="well">
-
-<table id="table_m_stat_31"
-       data-toggle="table"
-       data-url="data/info31.json"
-       data-mobile-responsive="true">
-    <thead>
-
-    <tr>
-        <th data-field="fio" data-sortable="true" data-halign="center">Фио</th>
-        <th data-field="energy_value" data-sortable="true" data-halign="center">Рх(КвтЧ)</th>
-        <th data-field="qiwi_value" data-sortable="true" data-halign="center">Внес(руб.)</th>
-        <th data-field="energy_count" data-sortable="true" data-halign="center">Кол.Пок.</th>
-
-    </tr>
-    </thead>
-</table>
-
-</div>
-</div>
-<p><span class="glyphicon glyphicon-flash" aria-hidden="true"></span><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> по <a data-toggle="collapse" href="#s32" aria-expanded="false" aria-controls="collapseExample">Фазе 2</a>  - 1,082.10 кВт(по счётчикам в котельной) и 749.00 кВт(по показаниям владельцев), т.е. разница в показаниях <span class="label label-danger">333.10 Квт, а значит долг 1,998.60 руб.</span></p>
-<div class="collapse" id="s32">
-<div class="well">
-
-<table id="table_m_stat_32"
-       data-toggle="table"
-       data-url="data/info32.json"
-       data-mobile-responsive="true">
-    <thead>
-
-    <tr>
-        <th data-field="fio" data-sortable="true" data-halign="center">Фио</th>
-        <th data-field="energy_value" data-sortable="true" data-halign="center">Рх(КвтЧ)</th>
-        <th data-field="qiwi_value" data-sortable="true" data-halign="center">Внес(руб.)</th>
-        <th data-field="energy_count" data-sortable="true" data-halign="center">Кол.Пок.</th>
-
-    </tr>
-    </thead>
-</table>
-
-</div>
-</div>
-<p><span class="glyphicon glyphicon-flash" aria-hidden="true"></span><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> по <a data-toggle="collapse" href="#s33" aria-expanded="false" aria-controls="collapseExample">Фазе 3</a>  - 16.90 кВт(по счётчикам в котельной) и 70.20 кВт(по показаниям владельцев), т.е. разница в показаниях <span class="label label-danger">-53.30 Квт, а значит долг -319.80 руб.</span></p>
-<div class="collapse" id="s33">
-<div class="well">
-
-<table id="table_m_stat_33"
-       data-toggle="table"
-       data-url="data/info33.json"
-       data-mobile-responsive="true">
-    <thead>
-
-    <tr>
-        <th data-field="fio" data-sortable="true" data-halign="center">Фио</th>
-        <th data-field="energy_value" data-sortable="true" data-halign="center">Рх(КвтЧ)</th>
-        <th data-field="qiwi_value" data-sortable="true" data-halign="center">Внес(руб.)</th>
-        <th data-field="energy_count" data-sortable="true" data-halign="center">Кол.Пок.</th>
-
-    </tr>
-    </thead>
-</table>
-
-</div>
-</div>
-
-<p>Замечание: для того, чтобы посмотреть детализацию по цифрам в тексте выше -
-нажмите на слово или цифру, выделенную голубым цветом!
-</p>
-
-</div>
-<!-- ################################################################ -->
-
 
    <div class="bs-callout bs-callout-danger">
     <h4>ВАЖНО!!!</h4>
@@ -382,7 +383,7 @@ body {  padding: 10px; padding-top: 55px;}
 
 <table id="table"
        data-toggle="table"
-       data-url="https://dl.dropboxusercontent.com/s/np6si8zsj63ih7z/data.json"
+       data-url="data/data.json"
        data-search="true"
        data-show-refresh="true"
        data-show-toggle="true"
