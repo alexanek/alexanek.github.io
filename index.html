@@ -48,8 +48,8 @@ body {  padding: 10px; padding-top: 55px;}
     <thead>
 
     <tr>
-        <th data-field="date" class=result_table_col data-sortable="false" data-halign="center">Дата, на которую списывались показания</th>
-        <th data-field="em_value_ondate" class=result_table_col data-sortable="false" data-halign="center">Показания счётчика (коэф.=40)</th>
+        <th data-field="date" class=result_table_col data-sortable="false" data-halign="center">Дата</th>
+        <th data-field="em_value_ondate" class=result_table_col data-sortable="false" data-halign="center">Показания(к.=40)</th>
         <th data-field="days" class=result_table_col data-sortable="false" data-halign="center">Длительность, дни</th>
         <th data-field="value_diff" class=result_table_col data-sortable="false" data-halign="center">Расход, Квт</th>
         <th data-field="cost" class=result_table_col data-sortable="false" data-halign="center">Стоимость, руб</th>
@@ -62,13 +62,13 @@ body {  padding: 10px; padding-top: 55px;}
       </div>
     
     
-       <p>За период с 18.03.2015 по 08.11.2015 суммарное значение потребленной электроэнергии по счётчикам в котельной составило:  <strong> 4742.00 кВт</strong>, в т.ч.:</p>
+<p>За период с 18.03.2015 по 08.11.2015 суммарное значение потребленной электроэнергии по счётчикам в котельной составило:  <strong> 4742.00 кВт</strong>, в т.ч.:</p>
 
 
-<p>Расход по 1 Группе гаражей (рядом с магазином до забора): <strong>1,493.00 кВт</strong>, в т.ч.:</p>
+<p><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> Расход по 1 Группе гаражей (рядом с магазином до забора): <strong>1,493.00 кВт</strong>, в т.ч.:</p>
 
 
-<p>по <a data-toggle="collapse" href="#s21" aria-expanded="false" aria-controls="collapseExample">Фазе 1</a>  - 974.60 кВт<p>
+<p><span class="glyphicon glyphicon-flash" aria-hidden="true"></span><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> по <a data-toggle="collapse" href="#s21" aria-expanded="false" aria-controls="collapseExample">Фазе 1</a>  - 974.60 кВт<p>
             
 <div class="collapse" id="s21">
 <div class="well">
@@ -83,6 +83,8 @@ body {  padding: 10px; padding-top: 55px;}
         <th data-field="ugn" data-sortable="true" data-halign="center">УГН</th>
         <th data-field="fio" data-sortable="true" data-halign="center">Фио</th>
         <th data-field="energy_value" data-sortable="true" data-halign="center">Рх(КвтЧ)</th>
+        <th data-field="qiwi_value" data-sortable="true" data-halign="center">Внес(руб.)</th>
+        <th data-field="energy_count" data-sortable="true" data-halign="center">Кол.Пок.</th>
 
     </tr>
     </thead>
@@ -92,25 +94,200 @@ body {  padding: 10px; padding-top: 55px;}
 </div>
             
             
-<p>по Фазе 2  - 294.40 кВт</p>
-<p>по Фазе 3  - 210.20 кВт</p>
+<p><span class="glyphicon glyphicon-flash" aria-hidden="true"></span><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> по <a data-toggle="collapse" href="#s22" aria-expanded="false" aria-controls="collapseExample">Фазе 2</a>  - 294.40 кВт</p>
+<div class="collapse" id="s22">
+<div class="well">
+
+<table id="table_m_stat_22"
+       data-toggle="table"
+       data-url="data/info22.json"
+       data-mobile-responsive="true">
+    <thead>
+
+    <tr>
+        <th data-field="ugn" data-sortable="true" data-halign="center">УГН</th>
+        <th data-field="fio" data-sortable="true" data-halign="center">Фио</th>
+        <th data-field="energy_value" data-sortable="true" data-halign="center">Рх(КвтЧ)</th>
+        <th data-field="qiwi_value" data-sortable="true" data-halign="center">Внес(руб.)</th>
+        <th data-field="energy_count" data-sortable="true" data-halign="center">Кол.Пок.</th>
+
+    </tr>
+    </thead>
+</table>
+
+</div>
+</div>
 
 
+<p><span class="glyphicon glyphicon-flash" aria-hidden="true"></span><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> по <a data-toggle="collapse" href="#s23" aria-expanded="false" aria-controls="collapseExample">Фазе 3<a>  - 210.20 кВт</p>
+<div class="collapse" id="s23">
+<div class="well">
 
-<p>Расход по 2 Группе гаражей (за забором около старой котельной до Колгушкина включительно): <strong>1,737.60 кВт</strong>, в т.ч.:</p>
+<table id="table_m_stat_23"
+       data-toggle="table"
+       data-url="data/info23.json"
+       data-mobile-responsive="true">
+    <thead>
 
-<p>по Фазе 1  - 822.10 кВт</p>
-<p>по Фазе 2  - 69.00 кВт</p>
-<p>по Фазе 3  - 846.50 кВт</p>
+    <tr>
+        <th data-field="ugn" data-sortable="true" data-halign="center">УГН</th>
+        <th data-field="fio" data-sortable="true" data-halign="center">Фио</th>
+        <th data-field="energy_value" data-sortable="true" data-halign="center">Рх(КвтЧ)</th>
+        <th data-field="qiwi_value" data-sortable="true" data-halign="center">Внес(руб.)</th>
+        <th data-field="energy_count" data-sortable="true" data-halign="center">Кол.Пок.</th>
+
+    </tr>
+    </thead>
+</table>
+
+</div>
+</div>
 
 
+<p><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> Расход по 2 Группе гаражей (за забором около старой котельной до Колгушкина включительно): <strong>1,737.60 кВт</strong>, в т.ч.:</p>
 
-<p>Расход по 3 Группе гаражей (от Колгушкина и к поваровской дороге): <strong>1,511.40 кВт</strong>, в т.ч.:</p>
+<p><span class="glyphicon glyphicon-flash" aria-hidden="true"></span><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> по <a data-toggle="collapse" href="#s11" aria-expanded="false" aria-controls="collapseExample">Фазе 1</a>  - 822.10 кВт</p>
+<div class="collapse" id="s11">
+<div class="well">
 
-<p>по Фазе 1  - 368.30 кВт</p>
-<p>по Фазе 2  - 1,082.10 кВт</p>
-<p>по Фазе 3  - 16.90 кВт</p>
+<table id="table_m_stat_11"
+       data-toggle="table"
+       data-url="data/info11.json"
+       data-mobile-responsive="true">
+    <thead>
 
+    <tr>
+        <th data-field="ugn" data-sortable="true" data-halign="center">УГН</th>
+        <th data-field="fio" data-sortable="true" data-halign="center">Фио</th>
+        <th data-field="energy_value" data-sortable="true" data-halign="center">Рх(КвтЧ)</th>
+        <th data-field="qiwi_value" data-sortable="true" data-halign="center">Внес(руб.)</th>
+        <th data-field="energy_count" data-sortable="true" data-halign="center">Кол.Пок.</th>
+
+    </tr>
+    </thead>
+</table>
+
+</div>
+</div>
+<p><span class="glyphicon glyphicon-flash" aria-hidden="true"></span><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> по <a data-toggle="collapse" href="#s12" aria-expanded="false" aria-controls="collapseExample">Фазе 2</a>  - 69.00 кВт</p>
+<div class="collapse" id="s12">
+<div class="well">
+
+<table id="table_m_stat_12"
+       data-toggle="table"
+       data-url="data/info12.json"
+       data-mobile-responsive="true">
+    <thead>
+
+    <tr>
+        <th data-field="ugn" data-sortable="true" data-halign="center">УГН</th>
+        <th data-field="fio" data-sortable="true" data-halign="center">Фио</th>
+        <th data-field="energy_value" data-sortable="true" data-halign="center">Рх(КвтЧ)</th>
+        <th data-field="qiwi_value" data-sortable="true" data-halign="center">Внес(руб.)</th>
+        <th data-field="energy_count" data-sortable="true" data-halign="center">Кол.Пок.</th>
+
+    </tr>
+    </thead>
+</table>
+
+</div>
+</div>
+<p><span class="glyphicon glyphicon-flash" aria-hidden="true"></span><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> по <a data-toggle="collapse" href="#s13" aria-expanded="false" aria-controls="collapseExample">Фазе 3</a>  - 846.50 кВт</p>
+<div class="collapse" id="s13">
+<div class="well">
+
+<table id="table_m_stat_13"
+       data-toggle="table"
+       data-url="data/info13.json"
+       data-mobile-responsive="true">
+    <thead>
+
+    <tr>
+        <th data-field="ugn" data-sortable="true" data-halign="center">УГН</th>
+        <th data-field="fio" data-sortable="true" data-halign="center">Фио</th>
+        <th data-field="energy_value" data-sortable="true" data-halign="center">Рх(КвтЧ)</th>
+        <th data-field="qiwi_value" data-sortable="true" data-halign="center">Внес(руб.)</th>
+        <th data-field="energy_count" data-sortable="true" data-halign="center">Кол.Пок.</th>
+
+    </tr>
+    </thead>
+</table>
+
+</div>
+</div>
+
+
+<p><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> Расход по 3 Группе гаражей (от Колгушкина и к поваровской дороге): <strong>1,511.40 кВт</strong>, в т.ч.:</p>
+
+<p><span class="glyphicon glyphicon-flash" aria-hidden="true"></span><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> по <a data-toggle="collapse" href="#s31" aria-expanded="false" aria-controls="collapseExample">Фазе 1</a>  - 368.30 кВт</p>
+<div class="collapse" id="s31">
+<div class="well">
+
+<table id="table_m_stat_31"
+       data-toggle="table"
+       data-url="data/info31.json"
+       data-mobile-responsive="true">
+    <thead>
+
+    <tr>
+        <th data-field="ugn" data-sortable="true" data-halign="center">УГН</th>
+        <th data-field="fio" data-sortable="true" data-halign="center">Фио</th>
+        <th data-field="energy_value" data-sortable="true" data-halign="center">Рх(КвтЧ)</th>
+        <th data-field="qiwi_value" data-sortable="true" data-halign="center">Внес(руб.)</th>
+        <th data-field="energy_count" data-sortable="true" data-halign="center">Кол.Пок.</th>
+
+    </tr>
+    </thead>
+</table>
+
+</div>
+</div>
+<p><span class="glyphicon glyphicon-flash" aria-hidden="true"></span><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> по <a data-toggle="collapse" href="#s32" aria-expanded="false" aria-controls="collapseExample">Фазе 2</a>  - 1,082.10 кВт</p>
+<div class="collapse" id="s32">
+<div class="well">
+
+<table id="table_m_stat_32"
+       data-toggle="table"
+       data-url="data/info32.json"
+       data-mobile-responsive="true">
+    <thead>
+
+    <tr>
+        <th data-field="ugn" data-sortable="true" data-halign="center">УГН</th>
+        <th data-field="fio" data-sortable="true" data-halign="center">Фио</th>
+        <th data-field="energy_value" data-sortable="true" data-halign="center">Рх(КвтЧ)</th>
+        <th data-field="qiwi_value" data-sortable="true" data-halign="center">Внес(руб.)</th>
+        <th data-field="energy_count" data-sortable="true" data-halign="center">Кол.Пок.</th>
+
+    </tr>
+    </thead>
+</table>
+
+</div>
+</div>
+<p><span class="glyphicon glyphicon-flash" aria-hidden="true"></span><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> по <a data-toggle="collapse" href="#s33" aria-expanded="false" aria-controls="collapseExample">Фазе 3</a>  - 16.90 кВт</p>
+<div class="collapse" id="s33">
+<div class="well">
+
+<table id="table_m_stat_33"
+       data-toggle="table"
+       data-url="data/info33.json"
+       data-mobile-responsive="true">
+    <thead>
+
+    <tr>
+        <th data-field="ugn" data-sortable="true" data-halign="center">УГН</th>
+        <th data-field="fio" data-sortable="true" data-halign="center">Фио</th>
+        <th data-field="energy_value" data-sortable="true" data-halign="center">Рх(КвтЧ)</th>
+        <th data-field="qiwi_value" data-sortable="true" data-halign="center">Внес(руб.)</th>
+        <th data-field="energy_count" data-sortable="true" data-halign="center">Кол.Пок.</th>
+
+    </tr>
+    </thead>
+</table>
+
+</div>
+</div>
 
 </div>
 <!-- ################################################################ -->
