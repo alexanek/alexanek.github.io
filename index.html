@@ -69,7 +69,30 @@ body {  padding: 10px; padding-top: 55px;}
             <li>Расход по 1 Группе гаражей (рядом с магазином до забора): <strong>1,493.00 кВт</strong>
 
             <ul>
-            <li>по Фазе 1  - 974.60 кВт</li>
+            <li>по <a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Фазе 1</a>  - 974.60 кВт</li>
+            
+<div class="collapse" id="collapseExample">
+<div class="well">
+
+<table id="table_m_stat"
+       data-toggle="table"
+       data-url="data/info21.json"
+       data-mobile-responsive="true">
+    <thead>
+
+    <tr>
+        <th data-field="ugn" data-sortable="true" data-halign="center">УГН</th>
+        <th data-field="fio" data-sortable="true" data-halign="center">Фио</th>
+        <th data-field="energy_value" data-sortable="true" data-halign="center">Рх(КвтЧ)</th>
+
+    </tr>
+    </thead>
+</table>
+
+</div>
+</div>
+            
+            
             <li>по Фазе 2  - 294.40 кВт</li>
             <li>по Фазе 3  - 210.20 кВт</li>
             </ul>
