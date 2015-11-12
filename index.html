@@ -9,6 +9,22 @@
   <link rel="stylesheet" href="styles/bootstrap.css" />
   <link rel="stylesheet" href="styles/bootstrap-table.css" />
   <link rel="stylesheet" href="styles/docs.css">
+  
+    <style>
+
+body {  padding: 10px; padding-top: 55px;}
+
+.result_table_col {
+    min-width:130px !important;
+    max-width: 130px;
+}
+
+.fixed-table-container thead th .th-inner {
+    white-space: normal;
+}
+
+  </style>
+  
 </head>
 <body data-spy="scroll" data-target=".scrollspy">
 <div class="container bs-docs-container">
@@ -32,10 +48,10 @@
     <thead>
 
     <tr>
-        <th data-field="date" data-sortable="false" data-halign="center">Дата</th>
-        <th data-field="days" data-sortable="false" data-halign="center">Длительность, дни</th>
-        <th data-field="value_diff" data-sortable="false" data-halign="center">Расход, Квт</th>
-        <th data-field="cost" data-sortable="false" data-halign="center">Стоимость, руб</th>
+        <th data-field="date" class=result_table_col data-sortable="false" data-halign="center">Дата</th>
+        <th data-field="days" class=result_table_col data-sortable="false" data-halign="center">Длительность, дни</th>
+        <th data-field="value_diff" class=result_table_col data-sortable="false" data-halign="center">Расход, Квт</th>
+        <th data-field="cost" class=result_table_col data-sortable="false" data-halign="center">Стоимость, руб</th>
 
     </tr>
     </thead>
